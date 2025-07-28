@@ -1,4 +1,8 @@
-
+@media(max-width: 992px){
+  .testimonial-box{
+    min-height: 220px;
+  }
+}
 @media (max-width: 768px) {
   .testimonial-carousel {
     flex-direction: column;
