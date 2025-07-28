@@ -1,0 +1,28 @@
+
+@media (max-width: 768px) {
+  .testimonial-carousel {
+    flex-direction: column;
+  }
+  .testimonial-sidebar {
+    display: none;
+  }
+  .testimonial-box {
+    max-width: 100%;
+  }
+  .display-5 {
+    font-size: 2.5rem;
+  }
+
+  .position-absolute.top-50.start-100 {
+    position: static !important;
+    transform: none !important;
+    margin-top: 1rem;
+  }
+
+  .badge {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    position: relative !important;
+  }
+}
+

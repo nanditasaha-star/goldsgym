@@ -1,0 +1,367 @@
+/* style.css - Gold's Gym Landing Page Custom Styles */
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dc3545;
+}
+
+h1,
+h2 {
+    font-family: "Bangers", sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+}
+
+h2.accordion-header {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
+.badge {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+}
+
+.badge1{
+    top: 20%;
+    left: 0;
+}
+
+.badge2{
+    top: 0;
+    right: 0;
+}
+
+.badge3{
+    bottom: 14%;
+    left: 0;
+}
+
+.badge4{
+       bottom: 36%;
+    right: -1%;
+}
+
+/* Header */
+.main-header {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Fullscreen Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0);
+    z-index: 999;
+    display: none;
+    animation: fadeSlideIn 0.5s ease;
+}
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mobile-menu .nav-link {
+    font-size: 1.5rem;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.mobile-menu .nav-link:hover {
+    color: #f9d342;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Header Section */
+
+
+/* Hero Section */
+
+/* .index-banner{
+    padding: 100px;
+} */
+
+section .display-5 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+section p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Plans Section */
+.card {
+    border-width: 2px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h5 {
+    font-size: 1.25rem;
+}
+
+.card ul {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.card ul li::before {
+    content: "\2713";
+    color: #dc3545;
+    margin-right: 8px;
+}
+
+.choose-btn {
+    font-weight: 600;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Trainers Section */
+.owl-carousel .card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.owl-carousel .card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.owl-carousel .card-body h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.owl-carousel .card-body p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.owl-carousel .card-body a {
+    font-weight: 600;
+    color: #dc3545;
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+	Testimonial Section
+--------------------------------------------------------------*/
+
+.testimonial-section {
+    background: #000;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.testimonial-section h2 span {
+    color: #e22b2b;
+}
+
+.testimonial-section p {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.testimonial-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-box {
+    background: #b32025;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 650px;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+.testimonial-box h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.testimonial-box small {
+    display: block;
+    margin-bottom: 10px;
+    color: #f0cfcf;
+}
+
+.testimonial-box::after {
+    content: '\201C';
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    opacity: 0.2;
+}
+
+.testimonial-user {
+    display: flex;
+    gap: 15px;
+}
+
+.testimonial-user img {
+    border-radius: 12px;
+    width: 100px;
+    height: auto;
+}
+
+.testimonial-carousel-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.testimonial-carousel-controls button {
+    background: #1c1c1c;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.testimonial-carousel-controls button:hover {
+    background: #e22b2b;
+}
+
+.testimonial-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonial-sidebar img {
+    width: 80px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.join-fitness-section {
+    background: linear-gradient(to right, #000000, #0a0a0a);
+}
+
+.faq-section {
+    background: linear-gradient(to right, #0a0a0a, #000000);
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ffffff33;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.footer-section {
+    background-color: #0b0b0b;
+    border-top: 1px solid #222;
+}
+
+.footer-section a:hover {
+    color: #dc3545 !important;
+}
+
+.footer-section i {
+    font-size: 1.1rem;
+}

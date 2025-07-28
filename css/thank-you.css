@@ -1,0 +1,36 @@
+.thank-you-hero {
+    background: url(../images/thank-you-bg.jpg) no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.thank-you-content {
+    padding: 100px 0;
+}
+
+.thank-you-content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #dc3545;
+}
+
+.thank-you-content p {
+    font-size: 1rem;
+    font-weight: 400;
+}

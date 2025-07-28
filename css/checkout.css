@@ -1,0 +1,119 @@
+body {
+    background-color: #0b0b0b;
+    color: white;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Bangers", sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+}
+
+
+.checkout-header {
+    padding: 10px 0;
+    text-align: center;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.checkout-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.checkout-title .highlight {
+    color: #dc3545;
+}
+
+.form-control,
+.form-select {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.order-summary {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.product-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: #d4d4d4;
+    border-radius: 4px;
+}
+
+/* Discount Code Field Styling */
+.discount-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.discount-input {
+    position: relative;
+}
+
+.discount-input input.form-control {
+    padding-right: 60px;
+    border-radius: 8px;
+    height: 45px;
+    font-size: 0.95rem;
+    border: none;
+}
+
+.discount-input input::placeholder {
+    color: #bbb;
+}
+
+.apply-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #6c63ff;
+    /* light bluish-purple */
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: 0;
+}
+
+.pay-btn {
+    background-color: #dc3545;
+    border: none;
+    width: 100%;
+}
+
+.pay-btn:hover {
+    background-color: #b72e36;
+}
+
+.summary-details {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.summary-details .total {
+    color: white;
+    font-weight: bold;
+}
+
+.form-check {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .order-summary {
+        margin-top: 2rem;
+    }
+}
